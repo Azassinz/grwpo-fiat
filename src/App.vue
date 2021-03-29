@@ -18,12 +18,12 @@
         cols="auto"
         v-for="(item, i) in listItems"
         :key="i"
-        class="item px-8"
+        class="item px-8 d-none d-sm-flex"
       >
         {{ item.name }}
       </v-col>
 
-      <v-icon class="pl-8" color="secondary">mdi-menu</v-icon>
+      <v-icon class="pl-8 d-sm-none" color="secondary">mdi-menu</v-icon>
     </v-app-bar>
 
     <v-main>
