@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="text-center">
+    <v-row class="text-center mb-12">
       <v-col cols="12">
         <p style="color: white">Cotizador</p>
       </v-col>
@@ -18,7 +18,7 @@
         />
       </v-col>
 
-      <v-col class="form-container px-2 px-sm-7">
+      <v-col class="form-container px-2 px-sm-7 mx-0 mx-sm-4 mx-md-0">
         <v-row class="mt-16 mx-0">
           <v-col cols="12" sm="6">
             <form-combo
@@ -143,25 +143,29 @@
           placeholder="Escríbenos"
         />
         <v-row class="mb-8 mx-0">
-          <v-col cols="12" md="6">
+          <v-col cols="12" sm="6">
             <v-row class="no-gutters">
-              <label class="label">
-                <input type="checkbox" checked="checked" />
-                He léido y acepto el
-                <a href="avisodeprivacidad">
-                  aviso de privacidad
-                </a>
-                <span class="checkmark"></span>
-              </label>
-              <label class="label">
-                <input type="checkbox" />
-                No deseo recibir promociones
-                <span class="checkmark"></span>
-              </label>
+              <v-col cols="12" class="justify-start d-flex">
+                <label class="label">
+                  <input type="checkbox" checked="checked" />
+                  He léido y acepto el
+                  <a href="avisodeprivacidad">
+                    aviso de privacidad
+                  </a>
+                  <span class="checkmark"></span>
+                </label>
+              </v-col>
+              <v-col cols="12" class="justify-start d-flex">
+                <label class="label">
+                  <input type="checkbox" />
+                  No deseo recibir promociones
+                  <span class="checkmark"></span>
+                </label>
+              </v-col>
             </v-row>
           </v-col>
-          <v-col cols="12" md="6" class="d-flex align-end">
-            <v-row class="no-gutters justify-end">
+          <v-col cols="12" sm="6" class="d-flex align-end">
+            <v-row class="no-gutters justify-center justify-sm-end">
               <button class="form-btn">Enviar</button>
             </v-row>
           </v-col>
@@ -396,7 +400,7 @@ a {
 
 .label {
   color: #666;
-  font-size: 1em;
+  font-size: 0.9em;
   position: relative;
   padding-left: 30px;
   margin-top: 30px;
